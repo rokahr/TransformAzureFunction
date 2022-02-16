@@ -25,3 +25,4 @@ As an alternative, the function can be called locally where the account key is p
   "storagekey": "YourStorageKey"
 }
 ```
+Follow these instructions to create an Azure Python Function: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-python
