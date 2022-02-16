@@ -93,9 +93,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     try:
         if not storagekey:
-            initialize_storage_account('externalstoragesr')
+            initialize_storage_account('mystorage')
         else:
-            initialize_storage_account_local('externalstoragesr',storagekey)
+            initialize_storage_account_local('mystorage',storagekey)
     except Exception as e:
         return func.HttpResponse(
              "Could not initialize DataLakeFileSystemClient. Make sure that you passed the key in local development and if running as Azure Function, MSI is activated and has permissions.",
